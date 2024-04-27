@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delta V</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="weather__header">
+      <form class="weather__search">
+        <input
+          type="text"
+          placeholder="Encontrar otra estación..."
+          class="weather__searchform"
+        />
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </form>
+    </div>
+    <div class="container">
+      <img
+        id="logo"
+        src="./assets/Imagen de WhatsApp 2024-04-27 a las 11.39.28_c6055d9c.jpg"
+        alt=""
+      />
+      <div class="weather__body">
+        <h1 class="weather__city"></h1>
+        <div class="weather__datetime"></div>
+        <div class="weather__forecast"></div>
+        <div class="weather__icon"></div>
+        <p class="weather__temperature">
+          <span class="weather_unit_celsius"></span>
+        </p>
+
+        <div class="weather__units"></div>
+      </div>
+      <div class="weather__info">
+        <div class="weather__card">
+          <i class="fas fa-tint"></i>
+          <div>
+            <p>Humedad</p>
+            <p class="weather__humidity">18&deg;</p>
+          </div>
+        </div>
+        <div class="weather__card">
+          <i class="fas fa-wind"></i>
+          <div>
+            <p>Viento</p>
+            <p class="weather__wind">18&deg;</p>
+          </div>
+        </div>
+        <div class="weather__card">
+          <i class="fas fa-tachometer-alt"></i>
+          <div>
+            <p>Presión</p>
+            <p class="weather__pressure">18&deg;</p>
+          </div>
+        </div>
+      </div>
+      <div class="weather__minmax">
+        <p>Min: 12&deg;</p>
+        <p>Max: 16&deg;</p>
+      </div>
+    </div>
+    <footer>
+      <p>
+        2024 Delta V. All Rights Reserved.
+        <a href="https://www.instagram.com/marianacambelucioquique/"
+          >@marianacambelucioquique</a
+        >
+      </p>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/a692e1c39f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
