@@ -82,4 +82,33 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${currCity}&appid=${API
 })
 }
 
+function vantaToggle(){
+    
+}
+
 document.body.addEventListener('load', getWeather())
+
+gsap.fromTo(
+    ".loading-page",
+    { opacity: 1 },
+    {
+      opacity: 0,
+      display: "none",
+      duration: 1.5,
+      delay: 3.5,
+    }
+  );
+  
+  gsap.fromTo(
+    ".logo-name",
+    {
+      y: 50,
+      opacity: 0,
+    },
+    {
+      y: 0,
+      opacity: 1,
+      duration: 1,
+      delay: 0.5,
+    }
+  );
